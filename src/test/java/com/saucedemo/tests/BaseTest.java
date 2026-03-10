@@ -40,9 +40,9 @@ public abstract class BaseTest {
     // -------------------------------------------------------------------------
 
     @BeforeEach
-    void setUp(TestInfo testInfo) {
+    void setUp() {
         log.info("═══════════════════════════════════════════════════");
-        log.info("▶ Démarrage du test : {}", testInfo.getDisplayName());
+        log.info("▶ Démarrage du test : {}", "LoginOK");
         log.info("═══════════════════════════════════════════════════");
 
         driver    = WebDriverConfig.createDriver();
@@ -54,9 +54,9 @@ public abstract class BaseTest {
     }
 
     @AfterEach
-    void tearDown(TestInfo testInfo) {
+    void tearDown() {
         log.info("───────────────────────────────────────────────────");
-        log.info("■ Fin du test : {}", testInfo.getDisplayName());
+        log.info("■ Fin du test : {}", "Fin LoginOK");
 
         if (driver != null) {
             try {
