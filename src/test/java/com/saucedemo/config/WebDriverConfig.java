@@ -22,7 +22,7 @@ public class WebDriverConfig {
     // Constantes de configuration
     public static final String BASE_URL      = System.getProperty("base.url", "https://www.saucedemo.com");
     public static final String BROWSER       = System.getProperty("browser", "chrome");
-    public static final boolean HEADLESS     = Boolean.parseBoolean(System.getProperty("headless", "false"));
+    public static final boolean HEADLESS     = Boolean.parseBoolean(System.getProperty("headless", "true"));
     public static final int IMPLICIT_WAIT    = 5;   // secondes
     public static final int PAGE_LOAD_TIMEOUT = 30; // secondes
 
