@@ -20,9 +20,9 @@ public class WebDriverConfig {
     private static final Logger log = LoggerFactory.getLogger(WebDriverConfig.class);
 
     // Constantes de configuration
-    public static final String BASE_URL      = System.getProperty("base.url", "https://www.saucedemo.com");
-    public static final String BROWSER       = System.getProperty("browser", "firefox");
-    public static final boolean HEADLESS     = Boolean.parseBoolean(System.getProperty("headless", "true"));
+    public static final String BASE_URL      = "http://www.saucedemo.com";
+    public static final String BROWSER       = "chrome";
+    public static final boolean HEADLESS     = false;
     public static final int IMPLICIT_WAIT    = 5;   // secondes
     public static final int PAGE_LOAD_TIMEOUT = 30; // secondes
 
