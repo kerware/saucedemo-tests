@@ -12,7 +12,7 @@ public class LoginOK extends BaseTest {
     @Test
     public void testStandardUser() {
         LoginPage page = new LoginPage( driver );
-        page.login("standard_user","secret_sauce");
+        page.login("standard_user","secret_sauces");
         InventoryPage productsPage = new InventoryPage( driver );
         assertTrue(productsPage.isLoaded());
     }
